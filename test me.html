@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)https://18cab502-4739-425b-9cda-5d788a76a213-00-2jm8cauv54xf6.kirk.replit.dev/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonic Math Adventure</title>
+    <link href="./test me_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./test me_files/feather.min.css" rel="stylesheet">
+    <link href="./test me_files/style.css" rel="stylesheet">
+    <script>
+        // Global configuration for static assets
+        window.STATIC_URL = "/static/";
+    </script>
+</head>
+<body>
+    
+<div class="container-fluid game-container">
+    <div class="row">
+        <div class="col-12">
+            <div class="game-header">
+                <div class="timer">Time: <span id="timer">0:58</span></div>
+                <div class="score">Score: <span id="score">0</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <canvas id="gameCanvas" width="1160" height="300"></canvas>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="question-container">
+                <div id="question" class="question"></div>
+                <input type="number" id="answer" class="answer-input" placeholder="Enter answer">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="operations-container">
+                <button class="btn btn-primary operation-btn" data-operation="add">+</button>
+                <button class="btn btn-primary operation-btn" data-operation="subtract">-</button>
+                <button class="btn btn-primary operation-btn" data-operation="multiply">×</button>
+                <button class="btn btn-primary operation-btn" data-operation="divide">÷</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="resultsModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Game Results</h5>
+            </div>
+            <div class="modal-body">
+                <p>Final Score: <span id="finalScore">0</span></p>
+                <p>Correct Answers: <span id="correctAnswers">0</span></p>
+                <p>Wrong Answers: <span id="wrongAnswers">0</span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="location.reload()">Play Again</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+    <script src="./test me_files/bootstrap.bundle.min.js.download"></script>
+    <script src="./test me_files/Tone.js.download"></script>
+    <script src="./test me_files/feather.min.js.download"></script>
+    
+<script src="./test me_files/sonic.js.download"></script>
+<script src="./test me_files/game.js.download"></script>
+
+
+</body></html>
